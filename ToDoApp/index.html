@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css" />
+    <title>Todo app</title>
+  </head>
+  <body class="lightTheme">
+    <header class="rows">
+      <h1>TODO</h1>
+      <div class="Theme">
+        <input type="checkbox" name="theme" id="theme" />
+        <label for="theme"></label>
+      </div>
+    </header>
+
+    <main>
+      <div class="add_item rows">
+        <span></span>
+        <input
+          type="text"
+          placeholder="Create a new todo..."
+          name="addItem"
+          id="addItem"
+        />
+      </div>
+      <section class="content">
+        <ul></ul>
+      </section>
+      <div class="buttons rows">
+        <div class="items-left"><span>0</span> items left</div>
+        <div class="change rows">
+          <label>
+            <input type="radio" name="change" id="all" checked />
+            <span>All</span>
+          </label>
+          <label>
+            <input type="radio" name="change" id="active" />
+            <span>Active</span>
+          </label>
+          <label>
+            <input type="radio" name="change" id="completed" />
+            <span>Completed</span>
+          </label>
+        </div>
+        <span class="clear">Clear Completed</span>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
